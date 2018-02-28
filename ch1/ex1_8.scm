@@ -1,4 +1,4 @@
-
+; ex1.8
 ; cube
 (define (cube x) (* x x x))
 
