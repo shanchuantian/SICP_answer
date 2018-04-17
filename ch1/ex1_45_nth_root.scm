@@ -52,8 +52,7 @@
       ((repeated (lambda (x) (* base x)) n) 1)))
 (expt 2 5)
 
-(define (average x y)
-  (/ (+ x y) 2))
+
 (define (average-damp f)
   (lambda (x) (average x (f x))))
 (define (average-damp-n-times f n)

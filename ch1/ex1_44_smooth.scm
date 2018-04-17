@@ -17,4 +17,9 @@
       f
       (compose  f (repeated f (- n 1)))))
 
-((repeated smooth ) n)
+(define (square x) (* x x))
+
+(define (n-smoothed f n)
+  ((repeated smooth n)  f))
+
+((n-smoothed square 10) 5)
